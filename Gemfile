@@ -5,7 +5,9 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :development do
 gem 'sqlite3'
+end
 
 
 # Gems used only for assets and not required
@@ -13,6 +15,8 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'thin'
+  gem 'therubyracer'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer'
@@ -22,12 +26,11 @@ end
 
 gem 'jquery-rails'
 
-group: production do
+group :production do
 gem 'pg'
 end
 
-gem 'thin'
-gem 'therubyracer'
+
 
 
 # To use ActiveModel has_secure_password
