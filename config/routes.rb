@@ -2,6 +2,7 @@ Gostudyabroad::Application.routes.draw do
   resources :controls
 
 get "controls/index"
+get "controls/offer"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
